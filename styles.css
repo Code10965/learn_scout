@@ -1,3 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+.header {
+  border: 1px solid red;
+  padding: 15px;
+}
+
+.menu {
+  width: 35%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+.main {
+  width: 65%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
 body { 
   font-family: "Arial Black", Helvetica, sans-serif; 
   background-color: rgb(51, 49, 3); 
@@ -17,6 +40,7 @@ h2 {
     float: left;
     padding: 15px;
   }
+  
   .col-1 {width: 8.33%;}
   .col-2 {width: 16.66%;}
   .col-3 {width: 25%;}
