@@ -36,25 +36,24 @@ body, html {
     top: 16.6%;
     width: 58.4%;
     right: 16.6vw;
-  
 }
-  
 
 .navbar a {
     float: right;
     display: block;
     color: #D1E1E6;
-    text-align: left;
-    padding: 14px;
+    text-align: center;
+    padding: 0.83vh 0.83vw;
     text-decoration: none;
- 
 }
-
 
 .navbar a:hover {
-    background: #D1E1E6;
-    color: #49859B;
+    background-color: rgb(221, 221, 221);
+    color: black;
 }
+
+
+
 
 
 /* style grid */
