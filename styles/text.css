@@ -1,0 +1,10 @@
+/* Page content */
+.content {
+    padding: 16px;
+}
+
+
+/* styles text *//* Add a top margin to avoid content overlay */
+.main {
+    margin-top: 30px;
+}

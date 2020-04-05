@@ -1,0 +1,25 @@
+/* RWD images */
+
+.bg-img {
+    background-image: url(./images/background_unsplash_filterted.jpg);
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  
+    position: relative;
+  }
+
+
+.logo-img {
+    width: 83.3%;
+    top: 8.3%;
+    left: 8.3vh;
+    height: 8.3vh;
+    background-image: url(./images/Logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    position: relative;
+}
