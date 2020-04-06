@@ -13,10 +13,9 @@
 
 
 .logo-img {
-    width: 83.3%;
-    top: 8.3%;
-    left: 8.3vh;
-    height: 8.3vh;
+    width: 70px;
+    left: 0.4vw;
+    height: 70px;
     background-image: url(./images/Logo.png);
     background-repeat: no-repeat;
     background-size: contain;

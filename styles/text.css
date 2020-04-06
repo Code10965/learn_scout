@@ -1,10 +1,36 @@
-/* Page content */
-.content {
-    padding: 16px;
-}
-
-
 /* styles text *//* Add a top margin to avoid content overlay */
 .main {
-    margin-top: 30px;
+    margin-top: 2vh;
 }
+
+body {
+
+    color:#d1e1e6;
+    text-decoration: none;
+  }
+  h1 {
+    font-family: Georgia, serif;
+    font-size: 50px;
+    text-align: left;
+    line-height: 1vw;
+    align-items: top;
+  }
+  
+  h2 {
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size:16px;
+  text-align: right;
+  align-items: baseline;
+  line-height: 18px;
+  text-transform: uppercase;
+  }
+  
+  p {
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size:1vw;
+    text-align: justify;
+    align-items: center;
+    line-height: 1vw;
+  }
+
+
