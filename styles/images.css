@@ -1,24 +1,31 @@
 /* RWD images */
 
-.bg-img {
-    background-image: url(./images/background_unsplash_filterted.jpg);
-    height: 100%;
+.bg-img-blank {
+    background-image: url(./images/background_blank.jpg);
+    position: relative;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-  
-    position: relative;
+    height: 100%;
   }
 
+.bg-img-way {
+    background-image: url(./images/background_way.jpg);
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100%;
+  }
 
 .logo-img {
-    width: 70px;
-    left: 0.4vw;
-    height: 70px;
     background-image: url(./images/Logo.png);
+    position: relative;
     background-repeat: no-repeat;
     background-size: contain;
-  
-    position: relative;
-}
+    height: 70px;
+    width: 70px;
+    left: 0.4vw;
+  }
