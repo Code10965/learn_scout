@@ -1,4 +1,3 @@
-function myFunction() {
-   /* document.body.style.backgroundImage = url(./images/background_blank.jpg);*/
-   document.body.style.backgroundColor = "#000000";
-  }
+function changeBgImage() {
+   document.getElementById("bg-image-way").src = "styles/images/background_blank.jpg";
+ }

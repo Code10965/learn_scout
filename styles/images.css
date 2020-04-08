@@ -13,6 +13,7 @@
 .bg-img-way {
     background-image: url(./images/background_way.jpg);
     position: relative;
+
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;

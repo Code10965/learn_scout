@@ -28,13 +28,14 @@ body, html {
 .navbar {
     position: fixed; 
     overflow: hidden;
-    width: 13.5%;
+    width: 14%;
     height: 12vh;
     background-color:#49859b;
   }
 
 .navbar a {
     display: block;
+    overflow: hidden;
     color: #376474;
     padding-top: 5vh;
     text-decoration: none;
@@ -42,4 +43,9 @@ body, html {
   
 a:hover {
     color:#d1e1e6;
+  }
+
+button {
+    left: 50%;
+    top:20%;
   }
