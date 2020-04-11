@@ -1,3 +1,10 @@
-function changeBgImage() {
-   document.getElementById("bg-image-way").src = "styles/images/background_blank.jpg";
- }
+
+function makeResponsive() {
+  var x = document.getElementById("NavBar");
+  if (x.className === "nav") {
+    x.className += ".responsive";
+  } else {
+    x.className = "nav";
+  }
+}
+
