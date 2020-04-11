@@ -3,9 +3,9 @@ body {
     }
 
 .inner {
-    background-color: #49859b;
+    background-color:#49859b;
     }
-    
+ 
 .nav {
     background-color:#49859b;
     }
@@ -33,32 +33,30 @@ body {
 .container_index {
     background-color: rgb(2, 39, 4);
   }
-
 .item-logo {
     background-color: #24434D;
+  } 
+.item-heading-left {
+    background-color:gold;
   }
-.item-heading-tl {
-    background-color: red;
-  }
-.item-heading-tr {
+.item-heading-middle {
     background-color: rgb(191, 255, 0);
   }
-.item-heading-br {
+.item-heading-right {
     background-color: peru;
   }
-.item-explain-left {
-    background-color:blue;
+
+.item-explain-left, .item-explain-middle, .item-explain-right  {
+    background-color: rebeccapurple;
   }
-.item-explain-right {
-    background-color:blue;
+
+.item-info-left, .item-info-middle, .item-info-right {
+    background-color: green;
   }
-.item-info-left {
-    background-color: #24434D;
+
+.item-button {
+    background-color: rebeccapurple;
   }
-.item-info-right {
-    background-color: #24434D;
-  }
-  
 .item-go {
     background-color: rebeccapurple;
   }

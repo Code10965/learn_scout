@@ -1,49 +1,54 @@
 body {
-    text-decoration: none;
+  text-decoration: none;
   }
 
 h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.2vw;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: calc(12px + ((12 * (100vw — 800px))/799));
+  vertical-align: text-top;
+
   }
 
-h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 2.5vw;
+.nav a, p, section {
+  font-family: Tahoma, Geneva, sans-serif;
   }
 
-nav {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 1.4vw;
-    text-transform: uppercase;
-    text-align: center;
+.nav a {
+  font-size: calc(8px + ((6 * (100vw — 800px))/799));
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
   }
-  
+
+p, section {
+  font-size: calc(8px + ((4 * (100vw — 800px))/799));
+  }
+
+/*explain text under heading*/
 p {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 1.2vw;
-    text-align: justify;
-    text-justify: inter-word;
-    padding-top: 2vh;
+  text-align: justify;
+  vertical-align: text-top;
   }
 
+/*info text under explain text*/
 section {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 1vw;
-    text-align: left;
+  text-align: left;
   }
 
-button {
-    position: relative;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 1vw;
-    text-align: center;
+.item-button, .item-go {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   }
 
 footer {
-    font-family: Tahoma, Geneva, sans-serif;
-    font-size: 0.7vw;
-    text-align: justify;
-    text-justify: inter-word;
-    padding: 1vh;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 0.7vw;
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 1vh;
   }
