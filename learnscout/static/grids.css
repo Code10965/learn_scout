@@ -61,7 +61,7 @@
   }
 
 .item-explain-right {
-  grid-column: 7/10;
+  grid-column: 6/9;
   }
 
 .item-info-left, .item-info-middle, .item-info-right {
@@ -80,7 +80,7 @@
   }
 
 .item-info-right {
-  grid-column: 7/10;
+  grid-column: 6/9;
   grid-row: 5/8;
   }
 
@@ -93,7 +93,7 @@
   }
 
 .item-go {
-  grid-column: 7/10;
+  grid-column: 6/9;
   }
 
 .item-footer {

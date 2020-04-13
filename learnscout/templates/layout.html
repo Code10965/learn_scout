@@ -1,0 +1,39 @@
+<!DOCTYPE html> 
+<html lang="en-US"> 
+<head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"="learn scout offers training content for employees tailormade for their roles and proficiency level ">  
+    {% if title %}
+        <title>learnscout - {{ title }}</title>
+    {% else %}
+        <title>learnscout</title>
+    {% endif %}
+<link rel="stylesheet" href="static/main.css"> 
+<link rel="icon" sizes="32x32" type="image/x-icon" href="static/favicon.ico" />
+</head>
+<body class="intro-header" style="background-image: url('static/background_blank.jpg')">
+<header>
+  <div class="nav" id="navBar">
+    <a href="login.html">log-out</a>
+    <a href="myupskillingplan.html">my upskilling</a>
+    <a href="getguidance.html">get guidance</a>
+    <a class="icon" onclick="makeResponsive()">my</a>
+  </div>
+</header>
+  <div class="outer">
+    <div class="inner">
+      <div class="container_index">
+        <div class="item-logo">
+          <div class="logo-img">
+          </div>
+      <div class="container_index">
+        {% block content %}{% endblock %}
+      </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

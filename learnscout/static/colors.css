@@ -12,11 +12,11 @@ body {
 
 .nav a {
     background-color: #49859b;
-    color: #ffffff;
+    color: #24434D;
     }
 
 .nav a:hover {
-    opacity: 70%;
+    opacity: 30%;
     color: #24434D;
     }
 
@@ -27,8 +27,8 @@ body {
 
 .go-img:hover {
     opacity: 40%;
-
     }
+
 /*
 .container_index {
     background-color: rgb(2, 39, 4);
