@@ -13,9 +13,10 @@
   <link rel="icon" sizes="32x32" type="image/x-icon" href={{ url_for('static', filename='favicon.ico' ) }}>
 </head>
 <body>
-  <div class="bg-img-blank" style="background-image: url('/static/background_blank.jpg')">
+  <div class="bg-img main" style="background-image: url(/static/background_blank.jpg)">
+        <div class="outer-h">
   <header>
-    <div class="outer-h">
+
       <div class="container-index-h">
         <div class="item-logo">
           <div class="logo-img">
@@ -24,7 +25,7 @@
         <div class="nav" id="navBar">
           <a href={{ url_for('get_guidance') }}>get guidance</a>
           <a href={{ url_for('myupskillingplan') }}>my upskilling</a>
-          <a href={{ url_for('login') }}>log-out</a>
+          <a href={{ url_for('welcome') }}>log-out</a>
           <a href="javascript:void(0);" class="icon" onclick="responsive_NavBar()">&#9776;</a>
         </div>
       </div>

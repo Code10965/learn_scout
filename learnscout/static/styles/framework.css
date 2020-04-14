@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-}
+  }
  
 body, html {
   height: 100%;
@@ -14,7 +14,16 @@ body, html {
   height: 16.66vh;
   top: 8.33vh;
   margin: auto;
-}
+  }
+
+.outer-none {
+  display: block;
+  position: relative;
+  width: 83.33%;
+  height: 83.33vh;
+  top: 8.33vh;
+  margin: auto;
+  }
 
 .outer-m {
   display: block;
@@ -23,7 +32,7 @@ body, html {
   height: 66.66vh;
   top: 8.33vh;
   margin: auto;
-}
+  }
 
 .item-logo {
   position: fixed;

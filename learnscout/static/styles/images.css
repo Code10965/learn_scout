@@ -1,6 +1,6 @@
 /* RWD images */
 
-.bg-img-blank , .bg-img-way{
+.bg-img.main, .bg-img {
     position: relative;
     background-position: center center;
     background-repeat: no-repeat;
@@ -9,7 +9,7 @@
     height: 100%;
     overflow: hidden;
   }
-
+/*
 .bg-img-blank {
     background-image: url(/static/background_blank.jpg);
   }
@@ -17,7 +17,7 @@
 .bg-img-way {
     background-image: url(/static/background_way.jpg);
   }
-
+*/
 .logo-img {
     background-image: url(/static/Logo.png);
     position: relative;

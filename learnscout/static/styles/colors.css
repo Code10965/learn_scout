@@ -6,6 +6,10 @@ body {
   background-color: #49859b;
   }
 
+.outer-none {
+  background-color: transparent;
+  }
+
 .nav a {
   color: #24434D;
   }
@@ -16,7 +20,7 @@ body {
   color:#ffffff;
   }
 
-.go-img:hover {
+.go-img:hover, .button-img:hover {
   opacity: 40%;
   }
 

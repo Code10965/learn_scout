@@ -12,6 +12,7 @@ def index():
 @app.route('/')
 @app.route('/welcome')
 @app.route('/learnscout')
+@app.route('/logout')
 def welcome():
     return render_template('welcome.html')
 
@@ -20,7 +21,6 @@ def get_guidance():
     return render_template('getguidance.html', title='Get Guidance')
 
 @app.route('/login')
-@app.route('/logout')
 def login():
     return render_template('login.html', title='Login')
 
