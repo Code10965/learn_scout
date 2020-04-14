@@ -3,35 +3,39 @@
 <head> 
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"="learn scout offers training content for employees tailormade for their roles and proficiency level ">
-  <link rel="stylesheet" href="./styles/main.css"> 
+  <meta name="description"="learn scout offers training content for employees tailormade for their roles and    proficiency level ">  
     {% if title %}
         <title>learnscout - {{ title }}</title>
     {% else %}
-        <title>learnscout</title>
+        <title>Welcome</title>
     {% endif %}
+  <link rel="stylesheet" href="static/styles/main.css">
+  <link rel="icon" sizes="32x32" type="image/x-icon" href={{ url_for('static', filename='favicon.ico' ) }}>
 </head>
-  <body>
-    <div class="bg-img-way" value=home id="bg-image-way" onclick="changeImage()" src="styles/images/background_way.jpg">
-    <div class="outer">
-      <div class="inner">
-        <div class="container_index">
-            <div class="item-logo">
-                <div class="logo-img">
-                </div>
+<body>
+  <div class="bg-img-way" id="bg-image-way"  src="static/background_way.jpg">
+  <header>
+        <div class="container-index-h">
+          <div class="item-logo">
+            <div class="logo-img">
             </div>
-            <div class="item-heading-right">
-                <h1>guided<br>upskilling:<br>tailormade<br>for you</h1>
-            </div>
-            <div class="item-go">
-                <a class="go-img" href="login.html">
-                    <img src="styles/images/play_icon.png" alt="Link to login" width=50px height=50px>
-                </a>
-            </div>
+          </div>
         </div>
+  </header>
+  <main>   
+    <div class="container-index-m">
+      <div class="item-heading-right">
+        <h1>guided<br>upskilling:<br>tailormade<br>for you</h1>
+      </div>
+      <div class="item-start">
+        <a class="button-img" href="login.html">
+            <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to login" width=50px height=50px>
+        </a>
       </div>
     </div>
-    </div>
+  </main>
+<script src="static/scripts.js"></script>
+</div>
 </body>
 </html>
 

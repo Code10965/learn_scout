@@ -1,0 +1,68 @@
+body {
+  color: #ffffff;
+  }
+
+.outer-h, .outer-m {
+  background-color: #49859b;
+  }
+
+.nav a {
+  color: #24434D;
+  }
+
+.nav a:hover {
+  background-color: #49859b;
+  opacity: 0.3;
+  color:#ffffff;
+  }
+
+.go-img:hover {
+  opacity: 40%;
+  }
+
+/* colors for grid testing only*/
+/*
+.container-index-h  {
+  background-color: blueviolet;
+  }
+
+.container-index-m  {
+  background-color: tomato;
+  }
+
+.item-logo {
+    background-color: rgb(77, 36, 63);
+  } 
+
+.nav {
+  background-color: red;
+  } 
+
+.item-heading-left {
+    background-color:gold;
+  }
+
+.item-heading-middle {
+    background-color: rgb(191, 255, 0);
+  }
+
+.item-heading-right {
+    background-color: peru;
+  }
+
+.item-explain-left, .item-explain-middle, .item-explain-right  {
+    background-color: rebeccapurple;
+  }
+
+.item-info-left, .item-info-middle, .item-info-right {
+    background-color: green;
+  }
+
+.item-go-r, .item-go-m, .item-start {
+  background-color: rebeccapurple;
+  }
+
+.item-footer {
+    background-color:blue;
+  }
+  

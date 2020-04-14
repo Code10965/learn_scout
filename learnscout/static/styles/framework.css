@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+ 
+body, html {
+  height: 100%;
+  margin: 0;
+  }
+
+.outer-h {
+  display: block;
+  position: relative;
+  width: 83.33%;
+  height: 16.66vh;
+  top: 8.33vh;
+  margin: auto;
+}
+
+.outer-m {
+  display: block;
+  position: relative;
+  width: 83.33%;
+  height: 66.66vh;
+  top: 8.33vh;
+  margin: auto;
+}
+
+.item-logo {
+  position: fixed;
+  z-index: 1;
+  top: 8.33vh;
+  left: 8.3vw;
+  }
+
+.nav .icon {
+  display: none;
+  }
