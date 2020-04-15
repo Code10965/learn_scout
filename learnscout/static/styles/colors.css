@@ -1,7 +1,9 @@
+/* RULES FOR ALL ELEMENT */ 
 body {
   color: #ffffff;
   }
 
+/* RULES FOR OUTER FRAMES */ 
 .outer-h, .outer-m {
   background-color: #49859b;
   }
@@ -10,6 +12,7 @@ body {
   background-color: transparent;
   }
 
+/* RULES FOR NAVIGATION ELEMENTS */ 
 .nav a {
   color: #24434D;
   }
@@ -20,10 +23,22 @@ body {
   color:#ffffff;
   }
 
+/* RULES FOR LINKS IN TEXT */ 
+a:hover {
+  cursor: pointer;
+  }
+
+a:link {
+  color: #24434D;
+  text-decoration: none;
+  } 
+
+/* RULES FOR BUTTONS IN TEXT */ 
 .go-img:hover, .button-img:hover {
   opacity: 40%;
   }
 
+  
 /* colors for grid testing only*/
 /*
 .container-index-h  {

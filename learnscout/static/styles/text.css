@@ -1,30 +1,22 @@
+/* RULES FOR ALL ELEMENT */ 
 body {
   text-decoration: none;
   }
 
+/* GENERAL RULES FOR MULTIPLE ELEMENTS*/
+p, section, a, .nav a {
+  font-family: Tahoma, Geneva, sans-serif;
+  }
+
+p, section, a {
+  font-size: calc(8px + ((4 * (100vw — 800px))/799));
+  }
+
+/* SPECIFIC RULES FOR SINGLE ELEMENTS - TEXT */
 h1 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: calc(12px + ((12 * (100vw — 800px))/799));
   vertical-align: text-top;
-
-  }
-
-.nav a, p, section {
-  font-family: Tahoma, Geneva, sans-serif;
-  }
-
-.nav a {
-  font-size: calc(8px + ((6 * (100vw — 800px))/799));
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  }
-
-p, section {
-  font-size: calc(8px + ((4 * (100vw — 800px))/799));
   }
 
 /*explain text under heading*/
@@ -38,17 +30,19 @@ section {
   text-align: left;
   }
 
-.item-button, .item-go {
-  position: relative;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
+/* SPECIFIC RULES FOR SINGLE ELEMENTS - NAVIGATION BAR TEXT */
+.nav a {
+  font-size: calc(8px + ((6 * (100vw — 800px))/799));
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
   }
 
+/* RULES FOR FOOTER */ 
 footer {
   font-family: Tahoma, Geneva, sans-serif;
   font-size: 0.7vw;
   text-align: justify;
   text-justify: inter-word;
-  padding: 1vh;
+
   }

@@ -1,4 +1,4 @@
-/* RWD images */
+/* RULES FOR BACKGROUND IMAGES */ 
 
 .bg-img.main, .bg-img {
     position: relative;
@@ -9,15 +9,8 @@
     height: 100%;
     overflow: hidden;
   }
-/*
-.bg-img-blank {
-    background-image: url(/static/background_blank.jpg);
-  }
 
-.bg-img-way {
-    background-image: url(/static/background_way.jpg);
-  }
-*/
+/* RULES FOR LOGO */ 
 .logo-img {
     background-image: url(/static/Logo.png);
     position: relative;
@@ -27,9 +20,4 @@
     width: 65px;
     left: 0.4vw;
     top: 0.5vh;
-  }
-  
-.button-img {
-    height: 5px;
-    width: 5px;
   }

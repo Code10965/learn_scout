@@ -4,66 +4,89 @@
   <meta charset="UTF-8"> 
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"="learn scout offers training content for employees tailormade for their roles and    proficiency level ">  
+
     {% if title %}
         <title>learnscout - {{ title }}</title>
     {% else %}
         <title>Welcome</title>
     {% endif %}
+
   <link rel="stylesheet" href="static/styles/main.css">
   <link rel="icon" sizes="32x32" type="image/x-icon" href={{ url_for('static', filename='favicon.ico' ) }}>
 </head>
 <body>
-<div class="bg-img" id="change_bg" style="background-image: url(/static/background_way.jpg);">
-  <div class="outer-none" id="login_outer">
-    <header>
-      <div class="container-index-h">
-        <div class="item-logo">
-          <div class="logo-img">
+  <div class="bg-img" id="change_bg" style="background-image: url(/static/background_way.jpg);">
+    <div class="outer-none" id="login_outer">
+      <header>
+        <div class="container-index-h">
+          <div class="item-logo">
+            <div class="logo-img">
+            </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main>  
-      <div class="container-index-m">
-        <div class="item-heading-right" id="welcome_hide">
-          <h1>guided<br>upskilling:<br>tailormade<br>for you</h1>
+      </header>
+      <main>  
+        <div class="container-index-m">
+          <div class="item-heading-right" id="welcome_hide">
+            <h1>guided upskilling:<br>tailormade<br>for you</h1>
+          </div>
+          <div class="item-start" id="welcome_hide" onclick="responsive_welcome()">
+            <a class="button-img">
+              <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to login" width=50px height=50px >
+            </a>
+          </div>
+
+<!-- Login-page - Client-Side rendered with JS-->
+          <div class="item-go-t" id="login_visible" >
+            <a class="button-img" href={{ url_for('welcome') }}>
+                <img src={{ url_for('static', filename='back_icon.png' ) }} alt="Link to Welcome" width=50px height=50px>
+            </a>
+          </div>
+          <div class="item-heading-middle" id="login_visible">
+            <h1>Please log in to your account</h1>
+          </div>
+          <div class="item-explain-middle" id="login_visible"> 
+            <p>Log in with your email-address and your password. New to learn scout? <a onclick="responsive_login()" href="javascript:void(0);" id="login_hide">Register here.</a></p>
+          </div>
+          <div class="item-info-middle" id="login_visible">
+            <section>LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN LOGIN Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dolorem, molestias quas natus deleniti necessitatibus nesciunt voluptatem iure nemo dolor aem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dot.
+            </section>
+          </div>
+          <div class="item-go-m" id="login_visible">
+            <a class="button-img" href={{ url_for('get_guidance') }}>
+                <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to Get Guidance" width=50px height=50px>
+            </a>
+          </div>
+
+<!-- Register-page - Client-Side rendered with JS -->
+          <div class="item-go-t" id="register_visible" >
+            <a class="button-img" href={{ url_for('welcome') }}>
+                <img src={{ url_for('static', filename='back_icon.png' ) }} alt="Link to Welcome" width=50px height=50px>
+            </a>
+          </div>
+          <div class="item-heading-middle" id="register_visible">
+            <h1>Please register</h1>
+          </div>
+          <div class="item-explain-middle" id="register_visible"> 
+            <p>Already registered? <a onclick="responsive_welcome()" href="javascript:void(0);" >Login here.</a></p>
+          </div>
+          <div class="item-info-middle" id="register_visible">
+            <section>REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTERLorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dolorem, molestias quas natus deleniti necessitatibus nesciunt voluptatem iure nemo dolor aem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dot. REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER
+            </section>
+          </div>
+          <div class="item-go-m" id="register_visible">
+            <a class="button-img" href={{ url_for('get_guidance') }}>
+                <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to Get Guidance" width=50px height=50px>
+            </a>
+          </div>
+          <div class="item-footer" id="register_visible">
+              <footer>* By creating an account, you agree to our Terms of Service.
+              </footer>           
+          </div>
         </div>
-        <div class="item-start" id="welcome_hide" onclick="responsive_welcome()">
-          <a class="button-img">
-            <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to login" width=50px height=50px >
-          </a>
-        </div>
-        <div class="item-go-t" id="login_visible" >
-          <a class="button-img" href={{ url_for('welcome') }}>
-              <img src={{ url_for('static', filename='back_icon.png' ) }} alt="Link to Welcome" width=50px height=50px>
-          </a>
-        </div>
-        <div class="item-heading-middle" id="login_visible">
-          <h1>Please login</h1>
-        </div>
-        <div class="item-explain-middle" id="login_visible"> 
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dolorem, m
-          </p>
-        </div>
-        <div class="item-info-middle" id="login_visible">
-          <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dolorem, molestias quas natus deleniti necessitatibus nesciunt voluptatem iure nemo dolor aem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dot.
-          </section>
-        </div>
-        <div class="item-go-m" id="login_visible">
-          <a class="button-img" href={{ url_for('get_guidance') }}>
-              <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to Get Guidance" width=50px height=50px>
-          </a>
-        </div>
-        <div class="item-footer" id="login_visible">
-            <footer>* Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum du
-            </footer>           
-        </div>
-      </div>
-    </main>
+      </main>
+    </div>
   </div>
-</div>
-</div>
 <script src="static/scripts.js"></script>
 </body>
 </html>
-

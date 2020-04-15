@@ -6,8 +6,9 @@ body, html {
   height: 100%;
   margin: 0;
   }
-
-.outer-h {
+/* Definition of frames 
+GENERAL RULES FOR MULTIPLE ELEMENTS*/
+.outer-h, .outer-none, .outer-m  {
   display: block;
   position: relative;
   width: 83.33%;
@@ -16,24 +17,20 @@ body, html {
   margin: auto;
   }
 
+/* SPECIFIC RULES FOR SINGLE ELEMENTS - OUTER FRAMES */
+.outer-h  {
+  height: 16.66vh;
+  }
+
 .outer-none {
-  display: block;
-  position: relative;
-  width: 83.33%;
   height: 83.33vh;
-  top: 8.33vh;
-  margin: auto;
   }
 
 .outer-m {
-  display: block;
-  position: relative;
-  width: 83.33%;
   height: 66.66vh;
-  top: 8.33vh;
-  margin: auto;
   }
 
+/* RULES FOR LOGO */ 
 .item-logo {
   position: fixed;
   z-index: 1;
@@ -41,6 +38,7 @@ body, html {
   left: 8.3vw;
   }
 
+/* RULES FOR ICON (BAR) IN NAVIGATION BAR */ 
 .nav .icon {
   display: none;
   }
