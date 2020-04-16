@@ -1,5 +1,8 @@
 from flask import Flask, render_template, url_for
+from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
+
+app.config['SECRET_KEY'] = 'ba8eb8f0064b4745fe689f9fde30c3ac'
 
 @app.route('/layout')
 def layout():
@@ -14,15 +17,22 @@ def index():
 @app.route('/learnscout')
 @app.route('/logout')
 def welcome():
-    return render_template('welcome.html')
+    form=RegistrationForm()
+    return render_template('welcome.html', title='Welcome', form=form)
 
 @app.route('/getguidance')
 def get_guidance():
     return render_template('getguidance.html', title='Get Guidance')
 
+@app.route('/register')
+def register():
+    form=RegistrationForm()
+    return render_template('register.html', title='Register', form=form)
+
 @app.route('/login')
 def login():
-    return render_template('login.html', title='Login')
+    form=LoginForm()
+    return render_template('login.html', title='Login', form=form)
 
 @app.route('/myupskillingplan')
 def myupskillingplan():

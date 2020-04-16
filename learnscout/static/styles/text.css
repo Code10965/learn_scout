@@ -1,20 +1,29 @@
-/* RULES FOR ALL ELEMENT */ 
+@font-face {
+  font-family: roboto-regular;
+  src: url('Roboto-Regular.ttf');
+  }
+@font-face {
+    font-family: Rajdhani-regular;
+    src: url('Rajdhani-Regular.ttf');
+    }
+
+/* RULES FOR ALL ELEMENT */
 body {
   text-decoration: none;
   }
 
 /* GENERAL RULES FOR MULTIPLE ELEMENTS*/
-p, section, a, .nav a {
-  font-family: Tahoma, Geneva, sans-serif;
+p, section, a, .form-control, .form-control-label, .button, .nav a, .footer{
+  font-family: 'Roboto', Tahoma, Geneva;
   }
 
-p, section, a {
+p, section, a, .form-control, .form-control-label {
   font-size: calc(8px + ((4 * (100vw — 800px))/799));
   }
 
 /* SPECIFIC RULES FOR SINGLE ELEMENTS - TEXT */
 h1 {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Rajdhani', Cambria, Cochin, Georgia, 'Times New Roman';
   font-size: calc(12px + ((12 * (100vw — 800px))/799));
   vertical-align: text-top;
   }
@@ -23,6 +32,10 @@ h1 {
 p {
   text-align: justify;
   vertical-align: text-top;
+  }
+
+.item-explain-middle p, .item-explain-middle p a {
+  font-size: calc(6px + ((3 * (100vw — 800px))/799));
   }
 
 /*info text under explain text*/
@@ -38,11 +51,9 @@ section {
   text-decoration: none;
   }
 
-/* RULES FOR FOOTER */ 
+/* RULES FOR FOOTER */
 footer {
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size: 0.7vw;
+  font-size: calc(6px + ((3 * (100vw — 800px))/799));
   text-align: justify;
   text-justify: inter-word;
-
   }

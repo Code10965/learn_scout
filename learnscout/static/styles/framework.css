@@ -1,12 +1,12 @@
 * {
   box-sizing: border-box;
   }
- 
+
 body, html {
   height: 100%;
   margin: 0;
   }
-/* Definition of frames 
+/* Definition of frames
 GENERAL RULES FOR MULTIPLE ELEMENTS*/
 .outer-h, .outer-none, .outer-m  {
   display: block;
@@ -30,7 +30,7 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
   height: 66.66vh;
   }
 
-/* RULES FOR LOGO */ 
+/* RULES FOR LOGO */
 .item-logo {
   position: fixed;
   z-index: 1;
@@ -38,7 +38,39 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
   left: 8.3vw;
   }
 
-/* RULES FOR ICON (BAR) IN NAVIGATION BAR */ 
+/* RULES FOR ICON (BAR) IN NAVIGATION BAR */
 .nav .icon {
   display: none;
+  }
+
+/* RULES FOR FORMS IN REGISTRATION AND LOGINFORM */
+fieldset {
+  display: block;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  padding-left: 5vw;
+  padding-right: 5vw;
+  padding-bottom: 3vw;
+  border: none;
+}
+
+.form-control-label {
+  padding-left: 1vw;
+  }
+
+.form-control {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 3vh;
+  border:none;
+  border-radius: 5px;
+  padding-left: 10vw;
+  }
+
+.button{
+  border: none;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
   }

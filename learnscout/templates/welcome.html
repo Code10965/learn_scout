@@ -1,9 +1,9 @@
-<!DOCTYPE html> 
-<html lang="en-US"> 
-<head> 
-  <meta charset="UTF-8"> 
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"="learn scout offers training content for employees tailormade for their roles and    proficiency level ">  
+  <meta name="description"="learn scout offers training content for employees tailormade for their roles and    proficiency level ">
 
     {% if title %}
         <title>learnscout - {{ title }}</title>
@@ -13,6 +13,8 @@
 
   <link rel="stylesheet" href="static/styles/main.css">
   <link rel="icon" sizes="32x32" type="image/x-icon" href={{ url_for('static', filename='favicon.ico' ) }}>
+  <!--<link href="static/styles/Rajdhani-Regular.ttf" rel="stylesheet">
+  <link href="static/styles/Roboto-Regular.ttf" rel="stylesheet">-->
 </head>
 <body>
   <div class="bg-img" id="change_bg" style="background-image: url(/static/background_way.jpg);">
@@ -25,7 +27,7 @@
           </div>
         </div>
       </header>
-      <main>  
+      <main>
         <div class="container-index-m">
           <div class="item-heading-right" id="welcome_hide">
             <h1>guided upskilling:<br>tailormade<br>for you</h1>
@@ -45,7 +47,7 @@
           <div class="item-heading-middle" id="login_visible">
             <h1>Please log in to your account</h1>
           </div>
-          <div class="item-explain-middle" id="login_visible"> 
+          <div class="item-explain-middle" id="login_visible">
             <p>Log in with your email-address and your password. New to learn scout? <a onclick="responsive_login()" href="javascript:void(0);" id="login_hide">Register here.</a></p>
           </div>
           <div class="item-info-middle" id="login_visible">
@@ -67,21 +69,46 @@
           <div class="item-heading-middle" id="register_visible">
             <h1>Please register</h1>
           </div>
-          <div class="item-explain-middle" id="register_visible"> 
+          <div class="item-explain-middle" id="register_visible">
             <p>Already registered? <a onclick="responsive_welcome()" href="javascript:void(0);" >Login here.</a></p>
           </div>
           <div class="item-info-middle" id="register_visible">
-            <section>REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTERLorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dolorem, molestias quas natus deleniti necessitatibus nesciunt voluptatem iure nemo dolor aem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dot. REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER REGISTER
-            </section>
-          </div>
+              <div class="content-sction">
+              <form method="POST" action="">
+                  {{ form.hidden_tag() }}
+                      <fieldset class="form-group">
+                          <div class="form-group">
+                              {{ form.username.label(class="form-control-label")}}
+                              {{ form.username(class="form-control")}}
+                          </div>
+                          <div class="form-group">
+                              {{ form.email.label(class="form-control-label")}}
+                              {{ form.email(class="form-control")}}
+                          </div>
+                          <div class="form-group">
+                              {{ form.password.label(class="form-control-label")}}
+                              {{ form.password(class="form-control")}}
+                          </div>
+                          <div class="form-group">
+                              {{ form.confirm_password.label(class="form-control-label")}}
+                              {{ form.confirm_password(class="form-control")}}
+                          </div>
+                      </fieldset>
+              </form>
+              </div>
+              <div class="form-group">
+                {{ form.submit(class="button")}}
+              </div>
+            </div>
           <div class="item-go-m" id="register_visible">
-            <a class="button-img" href={{ url_for('get_guidance') }}>
-                <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to Get Guidance" width=50px height=50px>
-            </a>
+          <a class="button-img">
+              <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to Get Guidance" width=50px height=50px>
+          </a>
           </div>
           <div class="item-footer" id="register_visible">
-              <footer>* By creating an account, you agree to our Terms of Service.
-              </footer>           
+              <footer>* Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum du
+              </footer>
+          </div>
           </div>
         </div>
       </main>
