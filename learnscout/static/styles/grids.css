@@ -69,7 +69,7 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
 /* SPECIFIC RULES FOR SINGLE ELEMENTS - TEXT MIDDLE */
 .item-heading-middle {
   grid-column: 3/9;
-  grid-row: 2;
+  grid-row: 1;
   display: none;
   margin-left: auto;
   margin-right: auto;
@@ -77,7 +77,7 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
 
 .item-explain-middle {
   grid-column: 3/9;
-  grid-row: 3;
+  grid-row: 2;
   display: none;
   margin-left: auto;
   margin-right: auto;
@@ -85,7 +85,7 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
 
 .item-info-middle {
   grid-column: 3/9;
-  grid-row: 4/7;
+  grid-row: 3/6;
   display: none;
   }
 
@@ -109,14 +109,14 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
   }
 
 /* RULES FOR BUTTONS */
-.item-button, .item-go-m, .item-go-r, .button {
+.item-button, .item-go-m, .item-go-r {
   display: block;
   margin-left: auto;
   margin-right: auto;
   }
 
 .item-go-t {
-  grid-column: 3/6;
+  grid-column: 3;
   grid-row: 1;
   vertical-align: middle;
   display: none;
@@ -124,10 +124,16 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
   margin-right: auto;
   }
 
-.item-go-m, .button {
+.item-go-m {
   grid-column: 3/9;
-  grid-row: 7;
+  grid-row: 6;
   display: none;
+  vertical-align: middle;
+  text-align: center;
+  }
+
+.button {
+  grid-row: 3;
   }
 
 .item-go-r {
@@ -150,5 +156,4 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
   display: none;
   margin-left: auto;
   margin-right: auto;
-  padding: 1vh;
   }

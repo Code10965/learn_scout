@@ -34,29 +34,78 @@ a:link {
   }
 
 /* RULES FOR BUTTONS IN TEXT */
-.go-img, .button-img  {
-  opacity: 40%;
+.go-img, .button-img, .button, .agree-button {
+  opacity: 0.4;
   cursor: pointer;
   }
 
-.go-img:hover, .button-img:hover, .button:hover {
-  opacity: 100%;
+
+/*FOOTER with FUNCTION - but bumpy*/
+/*footer {
+  display: none;
+  color: #24434D;
+  opacity: 0.3;
+  }
+/*
+footer:hover {
+  display: none;
+  color: #49859b;
+  }
+
+footer.fade {
+  display:block;
+  color: #24434D;
+  opacity: 0.5;
+  transition: opacity 0.1s;
+  transition-timing-function: ease-in;
+  }
+
+footer.fade:hover {
+  display: block;
+  color: #24434D;
+  opacity: 1;
+  cursor: pointer;
+  }
+*/
+
+footer {
+  display: block;
+  color: #ffffff;
+  opacity: 0.5;
+  }
+
+footer:hover {
+  display: block;
+  color: #24434D;
+  opacity: 1;
+  cursor: pointer;
+  }
+.go-img:hover, .button-img:hover, .button:hover, .agree-button:hover {
+  opacity: 1;
   cursor: pointer;
   }
 
-.button {
-  background-color: transparent;
+.item-go-m {
+  background-color: #A4C2CD;
+  }
+
+.button, .agree-button {
+  background-color: #A4C2CD;
+  color: #24434D;
   }
 
 /* RULES FOR FORMS IN TEXT */
 .form-control{
   background-color: #A4C2CD;
   color: #24434D;
+  opacity: 0.4;
+  cursor: pointer;
   }
 
 .form-control-label{
   color: #ffffff;
   }
+
 
 /* colors for grid testing only*/
 /*
@@ -103,3 +152,9 @@ a:link {
 .item-footer {
     background-color:blue;
   }
+
+  form-group  {
+    background-color: orange;
+    }
+
+*/

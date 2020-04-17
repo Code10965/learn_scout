@@ -17,24 +17,24 @@ p, section, a, .form-control, .form-control-label, .button, .nav a, .footer{
   font-family: 'Roboto', Tahoma, Geneva;
   }
 
-p, section, a, .form-control, .form-control-label {
-  font-size: calc(8px + ((4 * (100vw — 800px))/799));
+p, section, a .form-control, .form-control-label{
+  font-size: calc(9px + ((3 * (100vw — 800px))/799));
   }
 
 /* SPECIFIC RULES FOR SINGLE ELEMENTS - TEXT */
-h1 {
+h1, h2 {
   font-family: 'Rajdhani', Cambria, Cochin, Georgia, 'Times New Roman';
   font-size: calc(12px + ((12 * (100vw — 800px))/799));
   vertical-align: text-top;
   }
 
 /*explain text under heading*/
-p {
+p, h2 {
   text-align: justify;
   vertical-align: text-top;
   }
 
-.item-explain-middle p, .item-explain-middle p a {
+.item-explain-middle p, .item-explain-middle p a, .button {
   font-size: calc(6px + ((3 * (100vw — 800px))/799));
   }
 
@@ -54,6 +54,6 @@ section {
 /* RULES FOR FOOTER */
 footer {
   font-size: calc(6px + ((3 * (100vw — 800px))/799));
-  text-align: justify;
-  text-justify: inter-word;
+  /*text-align: justify;
+  text-justify: inter-word;*/
   }

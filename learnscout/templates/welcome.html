@@ -55,9 +55,9 @@
             </section>
           </div>
           <div class="item-go-m" id="login_visible">
-            <a class="button-img" href={{ url_for('get_guidance') }}>
+            <!--<a class="button-img" href={{ url_for('get_guidance') }}>
                 <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to Get Guidance" width=50px height=50px>
-            </a>
+            </a>-->
           </div>
 
 <!-- Register-page - Client-Side rendered with JS -->
@@ -94,22 +94,59 @@
                               {{ form.confirm_password(class="form-control")}}
                           </div>
                       </fieldset>
-              </form>
-              </div>
-              <div class="form-group">
-                {{ form.submit(class="button")}}
-              </div>
-            </div>
-          <div class="item-go-m" id="register_visible">
-          <a class="button-img">
-              <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to Get Guidance" width=50px height=50px>
-          </a>
+
+                        <div class="form-group" z-index="1" onmouseover="highlight_footer()" onmouseleave="keep_highlight_footer()" z-index="1">
+                          {{ form.submit(class="button")}}
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                    <div class="item-footer" id="register_visible">
+                      <footer id="terms" onclick="openFrame()">* by clicking Sign up, you agree to the Terms and Conditions of learnscout.
+                      </footer>
+                    </div>
+<!-- T&C page - Client-Side rendered with JS-->
+                    <div id="register_visible">
+                      <aside class="frame" id="conditions" >
+
+
+
+
+                      <!--check formating-->
+
+
+
+
+
+
+
+                        <div class="item-heading-middle" id="register_visible">
+                          <h1>Please read our Terms & Conditions carefully.</h1>
+                        </div>
+
+                        <p>Some things in life are bad, <br> They can really make you mad.<br>
+                          Other things just make you swear and curse.<br> When you're chewing on life's gristle, <br>Don't grumble, give a whistle!<br>
+                          And this'll help things turn out for the best <br>And <br>
+                          Always look on the bright side of life! </p>
+                        <button class="agree-button" onclick=closeFrame()> agree </button>
+                      </aside>
+                    </div>
+          <!--<div class="item-heading-middle" id="terms_visible">
+            <h1>Please read our Terms & Conditions carefully.</h1>
           </div>
-          <div class="item-footer" id="register_visible">
-              <footer>* Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum du
-              </footer>
+          <div class="item-info-middle" id="terms_visible">
+            <section style="padding-left:15vw;">Some things in life are bad, <br> They can really make you mad.<br>
+              Other things just make you swear and curse.<br> When you're chewing on life's gristle, <br>Don't grumble, give a whistle!<br>
+              And this'll help things turn out for the best <br>And <br>
+              Always look on the bright side of life!
+            </section>
           </div>
-          </div>
+          <div class="item-go-m" id="terms_visible" >
+            <a class="button-img" href={{ url_for('welcome') }}>
+                <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to Register" width=50px height=50px>
+            </a>
+          </div>-->
+
         </div>
       </main>
     </div>

@@ -46,8 +46,8 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
 /* RULES FOR FORMS IN REGISTRATION AND LOGINFORM */
 fieldset {
   display: block;
-  margin-left: 5vw;
-  margin-right: 5vw;
+  margin-left: 3vw;
+  margin-right: 3vw;
   padding-left: 5vw;
   padding-right: 5vw;
   padding-bottom: 3vw;
@@ -68,9 +68,44 @@ fieldset {
   padding-left: 10vw;
   }
 
-.button{
+/* RULES FOR BUTTONS*/
+.button, .agree-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   border: none;
   width: 50px;
   height: 50px;
   border-radius: 50%;
+  z-index: 1;
   }
+
+.agree-button {
+  align-items: baseline;
+  }
+
+/*FRAME FOR T&C*/
+aside {
+  width: 2%;
+  height: 2%;
+  background-color: #49859b;
+  display: none;
+  position: absolute;
+  left: 49%;
+  top: 49%;
+  opacity: 0;
+  transition-duration: 300ms;
+}
+
+aside.post {
+  width: 83.33%;
+  height: 83.33%;
+  left: 8.33%;
+  top: 8.33%;
+  background-color: #24434d;
+  border: 1px #ffffff;
+  display: block;
+  opacity: 1;
+  transition-duration: 300ms;
+  z-index: 1;
+}

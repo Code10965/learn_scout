@@ -1,4 +1,4 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, url_for, flash, redirect
 from forms import RegistrationForm, LoginForm
 app = Flask(__name__)
 
@@ -12,24 +12,28 @@ def layout():
 def index():
     return render_template('index.html')
 
-@app.route('/')
-@app.route('/welcome')
-@app.route('/learnscout')
-@app.route('/logout')
+@app.route('/' , methods=['GET', 'POST'])
+@app.route('/welcome', methods=['GET', 'POST'])
+@app.route('/learnscout', methods=['GET', 'POST'])
+@app.route('/logout' , methods=['GET', 'POST'])
 def welcome():
     form=RegistrationForm()
+    if form.validate_on_submit():
+        flash(f'Account created for {form.username.data}!', 'success')
+        return redirect(url_for('getguidance'))
     return render_template('welcome.html', title='Welcome', form=form)
 
 @app.route('/getguidance')
 def get_guidance():
     return render_template('getguidance.html', title='Get Guidance')
 
-@app.route('/register')
+@app.route('/register', methods=['GET', 'POST'])
 def register():
     form=RegistrationForm()
+
     return render_template('register.html', title='Register', form=form)
 
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     form=LoginForm()
     return render_template('login.html', title='Login', form=form)
