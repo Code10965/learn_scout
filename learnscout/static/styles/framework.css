@@ -80,8 +80,9 @@ fieldset {
   z-index: 1;
   }
 
-.agree-button {
-  align-items: baseline;
+.agree-button{
+  margin-top: 8.33vh; 
+  text-align: center;
   }
 
 /*FRAME FOR T&C*/
