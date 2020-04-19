@@ -19,23 +19,41 @@ def index():
 def welcome():
     form=RegistrationForm()
     if form.validate_on_submit():
-        flash(f'Account created for {form.username.data}!', 'success')
-        return redirect(url_for('getguidance'))
+        flash(f"Account created for {form.username.data}.")
+        return redirect(url_for('get_guidance'))
     return render_template('welcome.html', title='Welcome', form=form)
 
-@app.route('/getguidance')
+@app.route('/testpage', methods=['GET', 'POST'])
+def testpage():
+    form=RegistrationForm()
+    if form.validate_on_submit():
+        flash(f"Account created for {form.username.data}.")
+        return redirect(url_for('get_guidance'))
+    return render_template('testpage.html', title='Testpage', form=form)
+
+    form=LoginForm()
+    if form.validate_on_submit():
+        flash(f"Welcome to learnscout, {form.username.data}.")
+        return redirect(url_for('get_guidance'))
+    return render_template('testpage.html', title='Testpage', form=form)
+
+@app.route('/getguidance' , methods=['GET', 'POST'])
 def get_guidance():
     return render_template('getguidance.html', title='Get Guidance')
 
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     form=RegistrationForm()
-
+    if form.validate_on_submit():
+        flash(f"Account created for {form.username.data}.")
+        return redirect(url_for('get_guidance'))
     return render_template('register.html', title='Register', form=form)
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form=LoginForm()
+    if form.validate_on_submit():
+        return redirect(url_for('get_guidance'))
     return render_template('login.html', title='Login', form=form)
 
 @app.route('/myupskillingplan')

@@ -1,47 +1,111 @@
-{% extends "layout.html" %}
-{% block content %}
-    <div class="item-heading-middle" style="display: block">
-        <h1>Please register</h1>
-    </div>
-    <div class="item-explain-middle" style="display: block">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dolorem, m
-    </p>
-    </div>
-    <div class="item-info-middle" style="display: block">
-        <div class="content-sction">
-        <form method="POST" action="">
-            {{ form.hidden_tag() }}
-                <fieldset class="form-group">
-                    <div class="form-group">
-                        {{ form.username.label(class="form-control-label")}}
-                        {{ form.username(class="form-control")}}
-                    </div>
-                    <div class="form-group">
-                        {{ form.email.label(class="form-control-label")}}
-                        {{ form.email(class="form-control")}}
-                    </div>
-                    <div class="form-group">
-                        {{ form.password.label(class="form-control-label")}}
-                        {{ form.password(class="form-control")}}
-                    </div>
-                    <div class="form-group">
-                        {{ form.confirm_password.label(class="form-control-label")}}
-                        {{ form.confirm_password(class="form-control")}}
-                    </div>
-                </fieldset>
-        </form>
-        </div>
-        <div class="form-group">
-          {{ form.submit(class="button")}}
+{% extends "layout_basic.html" %}
+{% block layout %}
+<div class="outer-none">
+  <header>
+    <div class="container-index-h">
+      <div class="item-logo">
+        <div class="logo-img">
         </div>
       </div>
-    <div class="item-go-m" style="display: block">
-    <a class="button-img">
-        <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to Get Guidance" width=50px height=50px>
-    </a>
     </div>
-    <div class="item-footer" style="display: block">
-        <footer>* Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum du
+  </header>
+  <main>
+    <div class="container-index-m">
+      <div class="item-go-t">
+        <a class="button-img" href={{ url_for('welcome') }}>
+          <img src={{ url_for('static', filename='back_icon.png' ) }} alt="Link to Welcome" width=50px height=50px>
+        </a>
+      </div>
+      <div class="item-heading-regi">
+        <h1>Please register</h1>
+      </div>
+      <div class="item-explain-regi">
+        <p>Already registered? <a href={{ url_for('login')}}>Login here.</a></p>
+      </div>
+      <div class="item-info-regi">
+        <div class="content-sction">
+          <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+              <div class="form-group">
+                {{ form.username.label(class="form-control-label")}}
+                {% if form.username.errors %}
+                {{ form.username(class="form-control form-control-lg is invalid")}}
+                <div class="invalid_feedback">
+                  {% for error in form.username.errors %}
+                  <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+                {% else %}
+                {{ form.username(class="form-control form-control-lg")}}
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form.email.label(class="form-control-label")}}
+                {% if form.email.errors %}
+                {{ form.email(class="form-control form-control-lg is invalid")}}
+                <div class="invalid_feedback">
+                  {% for error in form.email.errors %}
+                  <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+                {% else %}
+                {{ form.email(class="form-control form-control-lg")}}
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form.password.label(class="form-control-label")}}
+                {% if form.password.errors %}
+                {{ form.password(class="form-control form-control-lg is invalid")}}
+                <div class="invalid_feedback">
+                  {% for error in form.password.errors %}
+                  <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+                {% else %}
+                {{ form.password(class="form-control")}}
+                {% endif %}
+              </div>
+              <div class="form-group">
+                {{ form.confirm_password.label(class="form-control-label")}}
+                {% if form.confirm_password.errors %}
+                {{ form.confirm_password(class="form-control form-control-lg is invalid")}}
+                <div class="invalid_feedback">
+                  {% for error in form.confirm_password.errors %}
+                  <span>{{ error }}</span>
+                  {% endfor %}
+                </div>
+                {% else %}
+                {{ form.confirm_password(class="form-control")}}
+                {% endif %}
+              </div>
+            </fieldset>
+
+            <div class="form-group" z-index="1">
+              {{ form.submit(class="button")}}
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="item-footer">
+        <footer onclick="openFrame()">* by clicking Sign up, you agree to our Terms.
         </footer>
-    </div>
-{% endblock %}
+      </div>
+
+      <!-- T&C page - Client-Side rendered with JS-->
+      <div>
+        <aside class="frame" id="conditions">
+          <div class="item-heading-middle">
+            <h2>Please read our Terms & Conditions carefully.</h2>
+          </div>
+          <h6>Some things in life are bad, <br> They can really make you mad.<br>
+            Other things just make you swear and curse.<br> When you're chewing on life's gristle, <br>Don't grumble, give a whistle!<br>
+            And this'll help things turn out for the best <br>And <br>
+            Always look on the bright side of life! </h6>
+          <button class="agree-button" onclick=closeFrame()> agree </button>
+        </aside>
+      </div>
+
+  </main>
+</div>
+{% endblock layout %}

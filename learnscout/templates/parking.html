@@ -7,3 +7,63 @@
   </div>
 
   <!--<div class="item-go-m" id="register_visible">-->
+  {{ form.submit(class="button")}}
+
+
+  <div class="form-group">
+      {{ form.password.label(class="form-control-label")}}
+      {% if form.password.errors %}
+        {{ form.password(class="form-control form-control-lg is invalid")}}
+        <div class="invalid_feedback">
+            {% for error in form.password.errors %}
+              <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+      {% else %}
+        {{ form.password(class="form-control")}}
+      {% endif %}
+  </div>
+  <div class="form-group">
+      {{ form.confirm_password.label(class="form-control-label")}}
+      {% if form.confirm_password.errors %}
+        {{ form.confirm_password(class="form-control form-control-lg is invalid")}}
+        <div class="invalid_feedback">
+            {% for error in form.confirm_password.errors %}
+              <span>{{ error }}</span>
+            {% endfor %}
+        </div>
+      {% else %}
+        {{ form.confirm_password(class="form-control")}}
+      {% endif %}
+  </div>
+
+
+
+  <div class="outer-h">
+    <header>
+      <div class="container-index-h">
+        <div class="item-logo">
+          <div class="logo-img">
+          </div>
+        </div>
+        <div class="nav" id="navBar">
+          <a href={{ url_for('get_guidance') }}>get guidance</a>
+          <a href={{ url_for('myupskillingplan') }}>my upskilling</a>
+          <a href={{ url_for('register') }}>register</a>
+          <a href={{ url_for('login') }}>login</a>
+          <a href={{ url_for('login') }}>logout</a>
+          <!--<a href={{ url_for('welcome') }}>log-out</a>-->
+          <a href="javascript:void(0);" class="icon" onclick="responsive_NavBar()">&#9776;</a>
+        </div>
+      </div>
+    </header>
+  </div>
+    <main>
+      <div class="outer-m">
+        <div class="container-index-m">
+
+          {% block content %}{% endblock %}
+
+        </div>
+      </div>
+    </main>

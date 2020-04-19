@@ -12,12 +12,15 @@
   background-color: #24434D;
   opacity: 0.6;
   color: #ffffff;
+  font-size: calc(8px + ((6 * (100vw — 800px))/799));
   }
 
 /* RULES FOR ELEMENTS AFTER RESPONSIVENESS KICKED IN */
 /* TOTAL NAV BAR */
 .nav.responsive {
   position: relative;
+  margin-left: 50%;
+  width: 28%;
   }
 
 /* NAV BAR ELEMENTS */

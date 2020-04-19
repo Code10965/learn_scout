@@ -58,17 +58,18 @@ fieldset {
   padding-left: 1vw;
   }
 
-.form-control {
+.form-control, .invalid_feedback {
   display: block;
   position: relative;
   width: 100%;
   height: 3vh;
   border:none;
   border-radius: 5px;
-  padding-left: 10vw;
+  padding-left: 1.5vw;
   }
 
-/* RULES FOR BUTTONS*/
+
+/* RULES FOR BUTTONS & ALERTS*/
 .button, .agree-button {
   display: block;
   margin-left: auto;
@@ -81,8 +82,14 @@ fieldset {
   }
 
 .agree-button{
-  margin-top: 8.33vh; 
+  margin-top: 8.33vh;
   text-align: center;
+  }
+
+.item-alert-middle {
+  width: 100%;
+  height: 8.33vh;
+  border-radius: 10px;
   }
 
 /*FRAME FOR T&C*/

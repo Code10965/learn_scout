@@ -1,44 +1,51 @@
 /* RULES FOR ALL ELEMENT */
 body {
   color: #ffffff;
-  }
+}
 
 /* RULES FOR OUTER FRAMES */
-.outer-h, .outer-m {
+.outer-h, .outer-m, .nav a:hover, .outer-none {
+  opacity: 0.95;
+}
+
+.outer-h, .outer-m, .nav a:hover {
   background-color: #49859b;
-  }
+}
 
 .outer-none {
-  background-color: transparent;
-  }
+  background-color: #49859b;
+}
 
 /* RULES FOR NAVIGATION ELEMENTS */
 .nav a {
   color: #24434D;
-  }
+}
 
 .nav a:hover {
-  background-color: #49859b;
   opacity: 0.3;
-  color:#ffffff;
-  }
+  color: #ffffff;
+}
 
 /* RULES FOR LINKS IN TEXT */
 a:hover {
   cursor: pointer;
-  }
+}
 
 a:link {
   color: #24434D;
   text-decoration: none;
-  }
+}
 
 /* RULES FOR BUTTONS IN TEXT */
-.go-img, .button-img, .button, .agree-button {
-  opacity: 0.4;
+.go-img, .button-img {
+  opacity: 0.5;
   cursor: pointer;
-  }
+}
 
+.button, .agree-button {
+  opacity: 1;
+  cursor: pointer;
+}
 
 /*FOOTER with FUNCTION - but bumpy*/
 /*footer {
@@ -46,66 +53,52 @@ a:link {
   color: #24434D;
   opacity: 0.3;
   }
-/*
-footer:hover {
-  display: none;
-  color: #49859b;
-  }
-
-footer.fade {
-  display:block;
-  color: #24434D;
-  opacity: 0.5;
-  transition: opacity 0.1s;
-  transition-timing-function: ease-in;
-  }
-
-footer.fade:hover {
-  display: block;
-  color: #24434D;
-  opacity: 1;
-  cursor: pointer;
-  }
-*/
 
 footer {
   display: block;
   color: #ffffff;
   opacity: 0.5;
-  }
+}
 
 footer:hover {
   display: block;
   color: #24434D;
   opacity: 1;
   cursor: pointer;
-  }
-.go-img:hover, .button-img:hover, .button:hover, .agree-button:hover {
+}
+
+.go-img:hover, .button-img:hover {
   opacity: 1;
   cursor: pointer;
-  }
+}
+
+.button:hover, .agree-button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
 
 .item-go-m {
   background-color: #A4C2CD;
-  }
+}
 
 .button, .agree-button {
   background-color: #A4C2CD;
   color: #24434D;
-  }
+}
 
-/* RULES FOR FORMS IN TEXT */
-.form-control{
+/* RULES FOR FORMS IN TEXT & ALERTS */
+h3, .form-control {
   background-color: #A4C2CD;
+  opacity: 0.75;
+}
+
+h3, .form-control, .invalid_feedback {
   color: #24434D;
-  opacity: 0.4;
-  cursor: pointer;
-  }
+}
 
-.form-control-label{
+.form-control-label {
   color: #ffffff;
-  }
-
+}
 
 /* colors for grid testing only*/
 /*
@@ -149,7 +142,7 @@ footer:hover {
   background-color: rebeccapurple;
   }
 
-.item-footer {
+.item-footer, .item-alert-middle {
     background-color:blue;
   }
 

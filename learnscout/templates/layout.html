@@ -1,57 +1,31 @@
-<!DOCTYPE html>
-<html lang="en-US">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"="learn scout offers training content for employees tailormade for their roles and    proficiency level ">
-
-    {% if title %}
-        <title>learnscout - {{ title }}</title>
-    {% else %}
-        <title>learnscout</title>
-    {% endif %}
-
-  <link rel="stylesheet" href="static/styles/main.css">
-  <link rel="icon" sizes="32x32" type="image/x-icon" href={{ url_for('static', filename='favicon.ico' ) }}>
-  <link rel="stylesheet" href="static/styles/Rajdhani-Regular.ttf">
-  <link rel="stylesheet" href="static/styles/Roboto-Regular.ttf">
-</head>
-<body>
-  <div class="bg-img main" style="background-image: url(/static/background_blank.jpg)">
-    <div class="outer-h">
-      <header>
-        <div class="container-index-h">
-          <div class="item-logo">
-            <div class="logo-img">
-            </div>
-          </div>
-          <div class="nav" id="navBar">
-            <a href={{ url_for('get_guidance') }}>get guidance</a>
-            <a href={{ url_for('myupskillingplan') }}>my upskilling</a>
-            <a href={{ url_for('welcome') }}>log-out</a>
-            <a href="javascript:void(0);" class="icon" onclick="responsive_NavBar()">&#9776;</a>
-          </div>
+{% extends "layout_basic.html" %}
+{% block layout %}
+<div class="outer-h">
+  <header>
+    <div class="container-index-h">
+      <div class="item-logo">
+        <div class="logo-img">
         </div>
-      </header>
+      </div>
+      <div class="nav" id="navBar">
+        <a href={{ url_for('get_guidance') }}>get guidance</a>
+        <a href={{ url_for('myupskillingplan') }}>my upskilling</a>
+        <a href={{ url_for('register') }}>register</a>
+        <a href={{ url_for('login') }}>login</a>
+        <a href={{ url_for('welcome') }}>logout</a>
+        <!--<a href={{ url_for('welcome') }}>log-out</a>-->
+        <a href="javascript:void(0);" class="icon" onclick="responsive_NavBar()">&#9776;</a>
+      </div>
     </div>
-      <main>
-        <div class="outer-m">
-          <div class="container-index-m">
-            {% with message = get_flashed_messages(with categories = true) %}
-              {% if messages %}
-                {% for category, message in messages %}
-                  <div class="alert alert-{{ category }}">
-                    {{ message }}
-                  </div>
-                {% endfor %}
-              {% endif %}
-            {% endwith %}
-            {% block content %}{% endblock %}
+  </header>
+</div>
+<main>
+  <div class="outer-m">
+    <div class="container-index-m">
 
-          </div>
-        </div>
-      </main>
+      {% block content %}{% endblock %}
+
     </div>
-  <script src="static/scripts.js"></script>
-</body>
-</html>
+  </div>
+</main>
+{% endblock layout %}

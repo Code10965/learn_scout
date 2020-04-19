@@ -1,17 +1,26 @@
 {% extends "layout.html" %}
 {% block content %}
     <div class="item-heading-left">
-        <h1>Get Guidance</h1>
+      <h1>Get Guidance</h1>
     </div>
-    <div class="item-explain-left"> 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dolorem, molest sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dolorem, molest
+    <div class="item-alert-middle">
+      {% with messages = get_flashed_messages() %}
+        {% if messages %}
+          {% for message in messages %}
+            <h3>{{ message }}</h3>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+    </div>
+    <div class="item-explain-left">
+        <p>rem ipsum dolor sit amet
         </p>
     </div>
     <div class="item-info-left">
         <section>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptateicing elit. Placeat voluptates expedita rem dolorem, molestias quas natus deleniti necessitatibus nesciunt volupta nesciunt voluptatem iure ns expedita rem dolorem, molestias quas natus deleniti necessitatibus nesciunt voluptatem iure nemo dolor at.
         </section>
     </div>
-    <div class="item-explain-right"> 
+    <div class="item-explain-right">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptates expedita rem dolor.
         </p>
     </div>

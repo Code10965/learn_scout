@@ -13,7 +13,7 @@ body {
   }
 
 /* GENERAL RULES FOR MULTIPLE ELEMENTS*/
-p, section, h6, a .form-control, .form-control-label, .button, .nav a, .footer{
+p, section, h3, h6, a .form-control, .form-control-label, .button, .nav a, .footer{
   font-family: 'Roboto', Tahoma, Geneva;
   }
 
@@ -28,23 +28,18 @@ h1, h2 {
   vertical-align: text-top;
   }
 
+h2, h6 {
+  padding-top: 8.33vh;
+  text-align: center;
+  }
+
 /*explain text under heading*/
 p {
   text-align: justify;
   vertical-align: text-top;
   }
 
-h2 {
-  padding-top: 8.33vh;
-  text-align: center;
-  }
-
-h6 {
-  padding-top: 8.33vh;
-  text-align: center;
-  }
-
-.item-explain-middle p, .item-explain-middle p a, .button {
+h3, .item-explain-middle p, .item-explain-middle p a, .button {
   font-size: calc(6px + ((3 * (100vw — 800px))/799));
   }
 
@@ -53,17 +48,32 @@ section {
   text-align: left;
   }
 
-/* SPECIFIC RULES FOR SINGLE ELEMENTS - NAVIGATION BAR TEXT */
+/* SPECIFIC RULES FOR SINGLE ELEMENTS - NAVIGATION BAR TEXT, INVALID_FEEDBACK & ALERT */
 .nav a {
   font-size: calc(8px + ((6 * (100vw — 800px))/799));
-  text-align: center;
+  text-align: right;
   text-transform: uppercase;
   text-decoration: none;
   }
 
+.nav.responsive a {
+  font-size: calc(6px + ((3 * (100vw — 800px))/799));
+  }
+
+.nav.responsive .icon {
+  font-size: calc(8px + ((6 * (100vw — 800px))/799));
+  }
+
+h3 {
+  text-align: center;
+  }
+
+.invalid_feedback {
+  font-size: calc(6px + ((3 * (100vw — 800px))/799));
+  }
+
 /* RULES FOR FOOTER */
+
 footer {
   font-size: calc(6px + ((3 * (100vw — 800px))/799));
-  /*text-align: justify;
-  text-justify: inter-word;*/
   }

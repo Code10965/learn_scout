@@ -1,4 +1,4 @@
-/* RULES FOR BACKGROUND IMAGES */ 
+/* RULES FOR BACKGROUND IMAGES */
 
 .bg-img.main, .bg-img {
     position: relative;
@@ -10,7 +10,7 @@
     overflow: hidden;
   }
 
-/* RULES FOR LOGO */ 
+/* RULES FOR LOGO */
 .logo-img {
     background-image: url(/static/Logo.png);
     position: relative;

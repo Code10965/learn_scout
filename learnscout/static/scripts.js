@@ -67,19 +67,6 @@ function responsive_register() {
     res[i].style.display="block";
   }
 }
-/*
-function highlight_footer() {
-  document.getElementById("terms").style.display = "block";
-}
-
-function highlight_footer() {
-  var x = document.getElementById("terms");
-  if (x.className === "footer") {
-    x.className += " fade";
-  } else {
-    x.className = "footer";
-  }
-}*/
 
 //SCRIPT FOR T&C FRAME
 function openFrame() {
