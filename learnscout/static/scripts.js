@@ -7,8 +7,8 @@ function responsive_NavBar() {
   }
 }
 
-function responsive_welcome() {
-  var res = document.querySelectorAll("#welcome_hide");
+//function responsive_welcome() {
+/*  var res = document.querySelectorAll("#welcome_hide");
   for (var i = 0; i < res.length; i++){
     res[i].style.display="none";
   }
@@ -67,6 +67,7 @@ function responsive_register() {
     res[i].style.display="block";
   }
 }
+*/
 
 //SCRIPT FOR T&C FRAME
 function openFrame() {

@@ -1,25 +1,25 @@
 {% extends "layout_basic.html" %}
 {% block layout %}
-  <div class="bg-img" style="background-image: url(/static/background_way.jpg);">
-    <header>
-      <div class="container-index-h">
-        <div class="item-logo">
-          <div class="logo-img">
-          </div>
+<div class="bg-img" style="background-image: url(/static/background_way.jpg);">
+  <header>
+    <div class="container-index-h">
+      <div class="item-logo">
+        <div class="logo-img">
         </div>
       </div>
-    </header>
-    <main>
-      <div class="container-index-m">
-        <div class="item-heading-right" >
-          <h1>guided upskilling:<br>tailormade<br>for you</h1>
-        </div>
-        <div class="item-start">
-          <a class="button-img" href={{ url_for('login') }}>
-            <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to login" width=50px height=50px >
-          </a>
-        </div>
+    </div>
+  </header>
+  <main>
+    <div class="container-index-m">
+      <div class="item-heading-right">
+        <h1>guided upskilling:<br>tailormade<br>for you</h1>
       </div>
-    </main>
-  </div>
+      <div class="item-start">
+        <a class="go-img" href={{ url_for('login') }}>
+          <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to login" width=50px height=50px>
+        </a>
+      </div>
+    </div>
+  </main>
+</div>
 {% endblock layout %}

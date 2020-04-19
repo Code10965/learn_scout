@@ -1,34 +1,35 @@
 * {
   box-sizing: border-box;
-  }
+}
 
 body, html {
   height: 100%;
   margin: 0;
-  }
+}
+
 /* Definition of frames
 GENERAL RULES FOR MULTIPLE ELEMENTS*/
-.outer-h, .outer-none, .outer-m  {
+.outer-h, .outer-none, .outer-m {
   display: block;
   position: relative;
   width: 83.33%;
   height: 16.66vh;
   top: 8.33vh;
   margin: auto;
-  }
+}
 
 /* SPECIFIC RULES FOR SINGLE ELEMENTS - OUTER FRAMES */
-.outer-h  {
+.outer-h {
   height: 16.66vh;
-  }
+}
 
 .outer-none {
   height: 83.33vh;
-  }
+}
 
 .outer-m {
   height: 66.66vh;
-  }
+}
 
 /* RULES FOR LOGO */
 .item-logo {
@@ -36,38 +37,37 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
   z-index: 1;
   top: 8.33vh;
   left: 8.3vw;
-  }
+}
 
 /* RULES FOR ICON (BAR) IN NAVIGATION BAR */
 .nav .icon {
   display: none;
-  }
+}
 
 /* RULES FOR FORMS IN REGISTRATION AND LOGINFORM */
 fieldset {
   display: block;
-  margin-left: 3vw;
-  margin-right: 3vw;
-  padding-left: 5vw;
-  padding-right: 5vw;
-  padding-bottom: 3vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  padding-bottom: 2vw;
   border: none;
 }
 
 .form-control-label {
   padding-left: 1vw;
-  }
+}
 
 .form-control, .invalid_feedback {
   display: block;
   position: relative;
   width: 100%;
   height: 3vh;
-  border:none;
+  border: none;
   border-radius: 5px;
   padding-left: 1.5vw;
-  }
-
+}
 
 /* RULES FOR BUTTONS & ALERTS*/
 .button, .agree-button {
@@ -79,18 +79,18 @@ fieldset {
   height: 50px;
   border-radius: 50%;
   z-index: 1;
-  }
+}
 
-.agree-button{
+.agree-button {
   margin-top: 8.33vh;
   text-align: center;
-  }
+}
 
 .item-alert-middle {
   width: 100%;
   height: 8.33vh;
   border-radius: 10px;
-  }
+}
 
 /*FRAME FOR T&C*/
 aside {
@@ -107,9 +107,9 @@ aside {
 
 aside.post {
   width: 83.33%;
-  height: 83.33%;
+  height: 98%;
   left: 8.33%;
-  top: 8.33%;
+  top: 1%;
   background-color: #24434d;
   border: 1px #ffffff;
   display: block;

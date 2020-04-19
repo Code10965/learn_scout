@@ -31,29 +31,23 @@ a:hover {
   cursor: pointer;
 }
 
-a:link {
+a:link, .item-explain-regi p a, .item-explain-login p a {
   color: #24434D;
   text-decoration: none;
 }
 
 /* RULES FOR BUTTONS IN TEXT */
-.go-img, .button-img {
+.button-img, .go-img:hover, .button:hover, .agree-button:hover {
   opacity: 0.5;
   cursor: pointer;
 }
 
-.button, .agree-button {
+.go-img, .button, .agree-button, .button-img:hover {
   opacity: 1;
   cursor: pointer;
 }
 
 /*FOOTER with FUNCTION - but bumpy*/
-/*footer {
-  display: none;
-  color: #24434D;
-  opacity: 0.3;
-  }
-
 footer {
   display: block;
   color: #ffffff;
@@ -64,16 +58,6 @@ footer:hover {
   display: block;
   color: #24434D;
   opacity: 1;
-  cursor: pointer;
-}
-
-.go-img:hover, .button-img:hover {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.button:hover, .agree-button:hover {
-  opacity: 0.5;
   cursor: pointer;
 }
 
@@ -126,15 +110,15 @@ h3, .form-control, .invalid_feedback {
     background-color: rgb(191, 255, 0);
   }
 
-.item-heading-right {
+.item-heading-right, .item-heading-regi, .item-heading-login {
     background-color: peru;
   }
 
-.item-explain-left, .item-explain-middle, .item-explain-right  {
+.item-explain-left, .item-explain-middle, .item-explain-right, .item-explain-regi, .item-explain-login  {
     background-color: rebeccapurple;
   }
 
-.item-info-left, .item-info-middle, .item-info-right {
+.item-info-left, .item-info-middle, .item-info-right, .item-info-regi , .item-info-login {
     background-color: green;
   }
 
@@ -142,7 +126,7 @@ h3, .form-control, .invalid_feedback {
   background-color: rebeccapurple;
   }
 
-.item-footer, .item-alert-middle {
+.item-footer, .item-alert-middle .item-alert-bottom {
     background-color:blue;
   }
 

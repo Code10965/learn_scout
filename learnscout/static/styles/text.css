@@ -1,52 +1,65 @@
 @font-face {
   font-family: roboto-regular;
   src: url('Roboto-Regular.ttf');
-  }
+}
+
 @font-face {
-    font-family: Rajdhani-regular;
-    src: url('Rajdhani-Regular.ttf');
-    }
+  font-family: Rajdhani-regular;
+  src: url('Rajdhani-Regular.ttf');
+}
 
 /* RULES FOR ALL ELEMENT */
 body {
   text-decoration: none;
-  }
+}
 
 /* GENERAL RULES FOR MULTIPLE ELEMENTS*/
-p, section, h3, h6, a .form-control, .form-control-label, .button, .nav a, .footer{
+p, section, h3, h6, a .form-control, .form-control-label, .button, .nav a, .footer {
   font-family: 'Roboto', Tahoma, Geneva;
-  }
+}
 
-p, section, h6, a .form-control, .form-control-label{
+p, section, h6, a .form-control, .form-control-label {
   font-size: calc(9px + ((3 * (100vw — 800px))/799));
-  }
+}
 
 /* SPECIFIC RULES FOR SINGLE ELEMENTS - TEXT */
 h1, h2 {
   font-family: 'Rajdhani', Cambria, Cochin, Georgia, 'Times New Roman';
   font-size: calc(12px + ((12 * (100vw — 800px))/799));
   vertical-align: text-top;
-  }
+}
+
+h1 {
+  vertical-align: text-top;
+}
+
+h2 {
+  align-items: center;
+}
 
 h2, h6 {
   padding-top: 8.33vh;
   text-align: center;
-  }
+}
 
 /*explain text under heading*/
 p {
   text-align: justify;
   vertical-align: text-top;
-  }
+}
 
 h3, .item-explain-middle p, .item-explain-middle p a, .button {
   font-size: calc(6px + ((3 * (100vw — 800px))/799));
-  }
+}
+
+.button {
+  font-size: 10px;
+}
 
 /*info text under explain text*/
 section {
   text-align: left;
-  }
+}
 
 /* SPECIFIC RULES FOR SINGLE ELEMENTS - NAVIGATION BAR TEXT, INVALID_FEEDBACK & ALERT */
 .nav a {
@@ -54,26 +67,25 @@ section {
   text-align: right;
   text-transform: uppercase;
   text-decoration: none;
-  }
+}
 
 .nav.responsive a {
   font-size: calc(6px + ((3 * (100vw — 800px))/799));
-  }
+}
 
 .nav.responsive .icon {
   font-size: calc(8px + ((6 * (100vw — 800px))/799));
-  }
+}
 
 h3 {
   text-align: center;
-  }
+}
 
 .invalid_feedback {
   font-size: calc(6px + ((3 * (100vw — 800px))/799));
-  }
+}
 
 /* RULES FOR FOOTER */
-
 footer {
   font-size: calc(6px + ((3 * (100vw — 800px))/799));
-  }
+}

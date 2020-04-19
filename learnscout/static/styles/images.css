@@ -1,23 +1,22 @@
 /* RULES FOR BACKGROUND IMAGES */
-
 .bg-img.main, .bg-img {
-    position: relative;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100%;
-    overflow: hidden;
-  }
+  position: relative;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
 
 /* RULES FOR LOGO */
 .logo-img {
-    background-image: url(/static/Logo.png);
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: contain;
-    height: 65px;
-    width: 65px;
-    left: 0.4vw;
-    top: 0.5vh;
-  }
+  background-image: url(/static/Logo.png);
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 65px;
+  width: 65px;
+  left: 0.4vw;
+  top: 0.5vh;
+}

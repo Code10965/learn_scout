@@ -20,7 +20,7 @@
         <h1>Please register</h1>
       </div>
       <div class="item-explain-regi">
-        <p>Already registered? <a href={{ url_for('login')}}>Login here.</a></p>
+        <p>Already registered? <a href={{ url_for('login')}}>Login here</a></p>
       </div>
       <div class="item-info-regi">
         <div class="content-sction">
@@ -84,18 +84,17 @@
             <div class="form-group" z-index="1">
               {{ form.submit(class="button")}}
             </div>
+            <div class="form-group">
+              <footer class="item-footer" onclick="openFrame()">* by clicking Sign up, you agree to our Terms.
+              </footer>
+            </div>
           </form>
         </div>
       </div>
-      <div class="item-footer">
-        <footer onclick="openFrame()">* by clicking Sign up, you agree to our Terms.
-        </footer>
-      </div>
-
       <!-- T&C page - Client-Side rendered with JS-->
       <div>
         <aside class="frame" id="conditions">
-          <div class="item-heading-middle">
+          <div class="item-heading-regi">
             <h2>Please read our Terms & Conditions carefully.</h2>
           </div>
           <h6>Some things in life are bad, <br> They can really make you mad.<br>
