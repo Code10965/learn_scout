@@ -58,11 +58,11 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
 }
 
 .item-explain-left {
-  grid-column: 2/5;
+  grid-column: 2/6;
 }
 
 .item-info-left {
-  grid-column: 2/5;
+  grid-column: 2/6;
   grid-row: 4/8;
 }
 
@@ -80,21 +80,22 @@ GENERAL RULES FOR MULTIPLE ELEMENTS*/
   display: block;
 }
 
-.item-alert-middle, .item-alert-bottom  {
-  grid-column: 5/7;
-  display: table-cell;
-  margin-left: auto;
-  margin-right: auto;
-  align-items: center;
+
+.item-alert-nav {
+  display: block;
+  grid-column:4/8;
+  grid-row: 2;
+  vertical-align: middle;
 }
 
 .item-alert-middle {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  grid-column:4/8;
   grid-row: 1;
 }
 
-.item-alert-bottom  {
-  grid-row: 7;
-}
 
 /* SPECIFIC RULES FOR SINGLE ELEMENTS - TEXT RIGHT */
 .item-heading-right {

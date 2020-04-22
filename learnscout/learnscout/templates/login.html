@@ -7,6 +7,15 @@
         <div class="logo-img">
         </div>
       </div>
+      <div class="item-alert-nav">
+        {% with messages = get_flashed_messages() %}
+        {% if messages %}
+        {% for message in messages %}
+        <h3>{{ message }}</h3>
+        {% endfor %}
+        {% endif %}
+        {% endwith %}
+      </div>
     </div>
   </header>
   <main>
@@ -62,15 +71,6 @@
               {{ form.submit(class="button")}}
             </div>
           </form>
-          <div class="item-alert-bottom">
-            {% with messages = get_flashed_messages() %}
-            {% if messages %}
-            {% for message in messages %}
-            <h3>{{ message }}</h3>
-            {% endfor %}
-            {% endif %}
-            {% endwith %}
-          </div>
         </div>
       </div>
     </div>

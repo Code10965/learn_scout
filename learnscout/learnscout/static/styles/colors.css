@@ -71,7 +71,7 @@ footer:hover {
 }
 
 /* RULES FOR FORMS IN TEXT & ALERTS */
-h3, .form-control {
+.form-control {
   background-color: #A4C2CD;
   opacity: 0.75;
 }
@@ -122,7 +122,7 @@ h3, .form-control, .invalid_feedback {
     background-color: green;
   }
 
-.item-go-r, .item-go-m, .item-start, .button{
+.item-go-t, .item-go-r, .item-go-m, .item-start, .button{
   background-color: rebeccapurple;
   }
 

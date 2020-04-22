@@ -47,7 +47,7 @@
           </div>
         </div>
         <div class="nav" id="navBar">
-          <a href={{ url_for('get_guidance') }}>get guidance</a>
+          <a href={{ url_for('getguidance') }}>get guidance</a>
           <a href={{ url_for('myupskillingplan') }}>my upskilling</a>
           <a href={{ url_for('register') }}>register</a>
           <a href={{ url_for('login') }}>login</a>
@@ -67,3 +67,21 @@
         </div>
       </div>
     </main>
+
+
+---------------------------------------------------------
+"""
+subs=db.Table('subs',
+     db.Column('user_id', db.Integer,db.ForeignKey('user.user_id')),
+     db.Column('training_id',db.Integer,db.ForeignKey('training.training_id')),
+     )
+
+content=db.Table('content',
+     db.Column('user_id', db.Integer,db.ForeignKey('user.user_id')),
+     db.Column('training_id',db.Integer,db.ForeignKey('training.training_id')),
+     )
+"""
+
+#subscriptions = db.relationship('Training', secondary=subs, backref=db.backref('participant', lazy='True')) #will be a column in the Training db
+
+#content = db.relationship('User', secondary=content, backref=db.backref('skill', lazy='True')) #will be a column in the User db
