@@ -15,7 +15,7 @@ class User(db.Model, UserMixin):
     function_selected = db.Column(db.String(100), nullable=False, default="TBD")
 
     def __repr__(self):
-        return f"User('{self.username}', '{self.email}', '{self.function_selected}')"
+        return f"('{self.username}', '{self.email}', '{self.function_selected}')"
 
 class Function(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -25,9 +25,7 @@ class Function(db.Model):
     skill_3 = db.Column(db.String(100), nullable=True)
 
     def __repr__(self):
-        return ({self.functionname}, {self.skill_1}, {self.skill_2} , {self.skill_3})
-    def functionname(self):
-        return ({self.functionname})    
+        return f"Function('{self.functionname}', '{self.skill_1}', '{self.skill_2}' , '{self.skill_3}')"
 
 class Training(db.Model):
     id = db.Column(db.Integer, primary_key=True)
@@ -37,4 +35,4 @@ class Training(db.Model):
     material = db.Column(db.String(100), unique=True, nullable=True)
 
     def __repr__(self):
-        return f"Training('{self.trainingname}', '{self.skill}', '{self.material}')"
+        return f"Training('{self.trainingname}', '{self.signed_up}', '{self.participant}')"
