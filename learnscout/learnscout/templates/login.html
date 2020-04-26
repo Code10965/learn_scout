@@ -21,7 +21,7 @@
   <main>
     <div class="container-index-m">
       <div class="item-go-t">
-        <a class="button-img" href={{ url_for('welcome') }}>
+        <a class="button-img" href={{ url_for('main.welcome') }}>
           <img src={{ url_for('static', filename='back_icon.png' ) }} alt="Link to Welcome" width=50px height=50px>
         </a>
       </div>
@@ -29,7 +29,7 @@
         <h1>Please log in.</h1>
       </div>
       <div class="item-explain-login">
-        <p>Log in with your email-address and your password. New to learn scout? <a href={{ url_for('register')}}>Register here</a></p>
+        <p>Log in with your email-address and your password. New to learn scout? <a href={{ url_for('users.register')}}>Register here</a></p>
       </div>
       <div class="item-info-login">
         <div class="content-sction">
