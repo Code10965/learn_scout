@@ -69,6 +69,19 @@ fieldset {
   padding-left: 1.5vw;
 }
 
+/* RULES FOR SELECT FIELDS*/
+.custom_select {
+  display: blockinline-block; 
+  position: relative;
+  width: 20vw;
+  max-width: 20vw;
+  height: 3vh;
+  border: none;
+  border-radius: 5px;
+  padding-left: 2vw;
+  padding-top:0.1vh;
+}
+
 /* RULES FOR BUTTONS & ALERTS*/
 .button, .agree-button {
   display: block;

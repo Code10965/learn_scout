@@ -71,18 +71,28 @@ footer:hover {
 }
 
 /* RULES FOR FORMS IN TEXT & ALERTS */
-.form-control {
+.form-control, .custom_select {
   background-color: #A4C2CD;
   opacity: 0.75;
 }
 
-h3, .form-control, .invalid_feedback {
+h3, .form-control, .invalid_feedback, .custom_select {
   color: #24434D;
 }
 
 .form-control-label {
   color: #ffffff;
 }
+
+.custom_select:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+.custom_select:focus {
+  border: none;
+  outline: none;
+}
+
 
 /* colors for grid testing only*/
 /*

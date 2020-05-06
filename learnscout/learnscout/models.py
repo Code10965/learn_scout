@@ -32,7 +32,7 @@ class Training(db.Model):
     trainingname = db.Column(db.String(100), unique=True, nullable=False)
     signed_up = db.Column(db.String(25), nullable=True)
     participant = db.Column(db.String(25), nullable=True)
-    material = db.Column(db.String(100), unique=True, nullable=True)
+    material = db.Column(db.String(200), unique=True, nullable=True)
 
     def __repr__(self):
         return f"Training('{self.trainingname}', '{self.signed_up}', '{self.participant}')"
