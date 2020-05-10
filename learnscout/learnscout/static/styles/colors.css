@@ -76,15 +76,18 @@ footer:hover {
   opacity: 0.75;
 }
 
-h3, .form-control, .invalid_feedback, .custom_select {
+.radio {
+  background-color: green;
+  opacity: 0.75;
+}
+h3, .form-control, .invalid_feedback, .custom_select, .radio:select {
   color: #24434D;
 }
 
 .form-control-label {
   color: #ffffff;
 }
-
-.custom_select:hover {
+.custom_select:hover, .radio:hover {
   opacity: 1;
   cursor: pointer;
 }
