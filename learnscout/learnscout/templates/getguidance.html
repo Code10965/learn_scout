@@ -18,17 +18,26 @@
   </p>
 </div>
 {% if current_user.function_selected == "TBD" %}
+
 <div class="item-explain-right">
-    <label><p>Select your function please:</p>
+  <form method="POST" action='/getguidance'>
+    <input type="hidden" value="TBD" name="empty_function">
+    <label><p>Select your function please: (WIP)</p>
       <select class="custom_select" id="option_selected">
         <option><p>I am working in . . . </p></option>
         {% for x in functions %}
         <option value="{{x}}"><p>{{ x }}</p></option>
         {% endfor %}
-
       </select>
     </label>
-</div>
+    </div>
+    <div class="item-go-r">
+      <a type="submit" class="go-img" href={{ url_for('trainings.myupskillingplan') }}>
+          <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to upskilling plan" width=50px height=50px>
+      </a>
+  </form>
+    </div>
+
 {% else %}
 <div class="item-explain-right">
   <p>You told us that your are working in the {{ current_user.function_selected.title()}}-function.
@@ -39,10 +48,10 @@
   <form action='/myupskillingplan'>
     {% for x in training %}
     <p>
-    <label class="label"> 
+    <label class="label">
       <input type="radio" name="radio" class="radio">
       <span class="checkmark"></span>
-      {{ x }}   
+      {{ x }}
       <br>
     </label>
     </p>
@@ -51,10 +60,8 @@
 
 </div>
 <div class="item-go-r">
-  <input type="submit" value="let's start" class="button">
-  <a class="button-img" href={{ url_for('main.welcome') }}>
-    <img src={{ url_for('static', filename='play_icon.png' ) }} alt="Link to login" width=50px height=50px>
-  </a>
+  <input type="submit" value="WIP" class="button">
+
 </form>
 </div>
 {% endif %}

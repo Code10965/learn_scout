@@ -13,16 +13,3 @@ def get_data():
     final_list = functions_listed
     db_connection.close()
     return(final_list)
-    
-"""
-def print_select_options(elements):
-    option_list=[]
-    for s in elements:
-        option = "<option><p>" + str(s) + "</p></option>"
-        option_list.append(option)
-    return(option_list)
-    
-def test():
-    option_selected = request.form.get('comp_select')
-    return(str(option_selected))
-    """

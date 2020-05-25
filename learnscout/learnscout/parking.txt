@@ -1,2 +1,7 @@
 <input type="radio" id="{{x}}" name="{{x}}" value="{{x}}">
     <label for="{{x}}">{{ x }}</label><br><br>
+
+
+        <label class="label" for="{{x}}">
+    <input class="checkmark" type="radio" name="radio" value="{{x}}">{{ x }}
+    </label><br><br>
